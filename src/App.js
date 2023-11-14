@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import RaamatuList from './components/list';
+import Kirjeldus from './components/kirjeldus';
+import './index.css';
 
 function App() {
+  const [valitudRaamat, setValitudRaamat] = useState(null);
+
+  const handleItemClick = (nimi) => {
+    setValitudRaamat(nimi);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="kast">
+      <div className="raamatu-list">
+        <RaamatuList valitudRaamat={valitudRaamat} handleItemClick={handleItemClick} />
+      </div>
+      <div className="kirjeldus">
+        {valitudRaamat && <Kirjeldus valitudRaamat={valitudRaamat} />}
+      </div>
     </div>
   );
 }

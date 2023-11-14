@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.kast {
+  display: flex;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.raamatu-list {
+  width: 30%;
+}
+
+.kirjeldus {
+  width: 70%;
+  padding-left:1em;
+}
