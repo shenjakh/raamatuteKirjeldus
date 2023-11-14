@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/raamatuteKirjeldus/static/css/main.ad1e0cb4.css",
+    "main.js": "/raamatuteKirjeldus/static/js/main.1cb094a5.js",
+    "index.html": "/raamatuteKirjeldus/index.html",
+    "main.ad1e0cb4.css.map": "/raamatuteKirjeldus/static/css/main.ad1e0cb4.css.map",
+    "main.1cb094a5.js.map": "/raamatuteKirjeldus/static/js/main.1cb094a5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad1e0cb4.css",
+    "static/js/main.1cb094a5.js"
+  ]
+}
